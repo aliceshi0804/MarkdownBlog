@@ -4,6 +4,7 @@ const Article = require('./models/article')
 const articelRouter = require('./routes/articles');
 const methodOverride = require('method-override')
 const app = express();
+const PORT = process.env.PORT || 5000
 
 mongoose.connect("mongodb://localhost/blog", {
   useNewUrlParser: true,
@@ -23,4 +24,4 @@ app.get("/", async (req, res) => {
 
 app.use("/articles", articelRouter);
 
-app.listen(5000);
+app.listen(PORT);
