@@ -7,3 +7,5 @@ npm install
 npm run devStart 
 ```
 
+Currently eployed on [Heroku](https://personal-blog-qing.herokuapp.com/)!
+
